@@ -1,0 +1,85 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\brachtma\\source\\repos\\RegressionMLNETONNX\\RegressionMLNETONNX\\RegressionMLNETONNX.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\brachtma\\source\\repos\\RegressionMLNETONNX\\RegressionMLNETONNX\\RegressionMLNETONNX.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\brachtma\\source\\repos\\RegressionMLNETONNX\\RegressionMLNETONNX\\RegressionMLNETONNX.csproj",
+        "projectName": "RegressionMLNETONNX",
+        "projectPath": "C:\\Users\\brachtma\\source\\repos\\RegressionMLNETONNX\\RegressionMLNETONNX\\RegressionMLNETONNX.csproj",
+        "packagesPath": "C:\\Users\\brachtma\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\brachtma\\source\\repos\\RegressionMLNETONNX\\RegressionMLNETONNX\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\brachtma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\brachtma\\Desktop\\IrisMLApp\\IrisMeasurementModel\\bin\\Debug": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.ML": {
+              "target": "Package",
+              "version": "[1.5.5, )"
+            },
+            "Microsoft.ML.LightGbm": {
+              "target": "Package",
+              "version": "[1.5.5, )"
+            },
+            "Microsoft.ML.OnnxConverter": {
+              "target": "Package",
+              "version": "[0.17.5, )"
+            },
+            "Microsoft.ML.OnnxTransformer": {
+              "target": "Package",
+              "version": "[1.5.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
