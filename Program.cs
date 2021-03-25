@@ -6,7 +6,7 @@ using System.Runtime.InteropServices.ComTypes;
 using Microsoft.ML;
 using Microsoft.ML.Data;
 
-namespace RegressionMNETONNX
+namespace RegressionMLNETONNX
 {
     class Program
     {
