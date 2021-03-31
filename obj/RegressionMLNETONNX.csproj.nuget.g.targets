@@ -4,8 +4,9 @@
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
   </PropertyGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)microsoft.ml.onnxruntime.managed\1.6.0\build\netstandard1.1\Microsoft.ML.OnnxRuntime.Managed.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.ml.onnxruntime.managed\1.6.0\build\netstandard1.1\Microsoft.ML.OnnxRuntime.Managed.targets')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.ml.onnxruntime.managed\1.7.0\build\netstandard1.1\Microsoft.ML.OnnxRuntime.Managed.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.ml.onnxruntime.managed\1.7.0\build\netstandard1.1\Microsoft.ML.OnnxRuntime.Managed.targets')" />
     <Import Project="$(NuGetPackageRoot)microsoft.ml\1.5.5\build\netstandard2.0\Microsoft.ML.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.ml\1.5.5\build\netstandard2.0\Microsoft.ML.targets')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.ml.onnxruntime\1.7.0\build\netstandard1.1\Microsoft.ML.OnnxRuntime.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.ml.onnxruntime\1.7.0\build\netstandard1.1\Microsoft.ML.OnnxRuntime.targets')" />
     <Import Project="$(NuGetPackageRoot)lightgbm\2.2.3\build\LightGBM.targets" Condition="Exists('$(NuGetPackageRoot)lightgbm\2.2.3\build\LightGBM.targets')" />
   </ImportGroup>
 </Project>

@@ -222,7 +222,75 @@
           "lib/netstandard2.0/Microsoft.ML.OnnxConverter.dll": {}
         }
       },
-      "Microsoft.ML.OnnxRuntime.Managed/1.6.0": {
+      "Microsoft.ML.OnnxRuntime/1.7.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.ML.OnnxRuntime.Managed": "1.7.0"
+        },
+        "build": {
+          "build/netstandard1.1/Microsoft.ML.OnnxRuntime.props": {},
+          "build/netstandard1.1/Microsoft.ML.OnnxRuntime.targets": {}
+        },
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/libonnxruntime.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/osx-x64/native/libonnxruntime.dylib": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          },
+          "runtimes/win-x64/native/onnxruntime.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/onnxruntime.lib": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/onnxruntime.pdb": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/onnxruntime.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/onnxruntime.lib": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/onnxruntime.pdb": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win10-arm/native/onnxruntime.dll": {
+            "assetType": "native",
+            "rid": "win10-arm"
+          },
+          "runtimes/win10-arm/native/onnxruntime.lib": {
+            "assetType": "native",
+            "rid": "win10-arm"
+          },
+          "runtimes/win10-arm/native/onnxruntime.pdb": {
+            "assetType": "native",
+            "rid": "win10-arm"
+          },
+          "runtimes/win10-arm64/native/onnxruntime.dll": {
+            "assetType": "native",
+            "rid": "win10-arm64"
+          },
+          "runtimes/win10-arm64/native/onnxruntime.lib": {
+            "assetType": "native",
+            "rid": "win10-arm64"
+          },
+          "runtimes/win10-arm64/native/onnxruntime.pdb": {
+            "assetType": "native",
+            "rid": "win10-arm64"
+          }
+        }
+      },
+      "Microsoft.ML.OnnxRuntime.Managed/1.7.0": {
         "type": "package",
         "dependencies": {
           "NETStandard.Library": "1.6.1",
@@ -1884,21 +1952,58 @@
         "mlnetlogo.png"
       ]
     },
-    "Microsoft.ML.OnnxRuntime.Managed/1.6.0": {
-      "sha512": "v+165tGGYF9/LhgTqEI1VAz380SC+eG/0SsoJCqnPbsr3y1aIjBBmSli+Zqv+6G6k4b5zTQAFzfRPHAzwN/hww==",
+    "Microsoft.ML.OnnxRuntime/1.7.0": {
+      "sha512": "YWRs/FKtaoTn/qddhay76cyMrkYQ3jptR+I+7zGQLTsWFS75XCeguG/igIvx5ld2KbEdJ+KDTlJeRlrPe9ax4Q==",
       "type": "package",
-      "path": "microsoft.ml.onnxruntime.managed/1.6.0",
+      "path": "microsoft.ml.onnxruntime/1.7.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.txt",
         "Privacy.md",
-        "README.md",
+        "ThirdPartyNotices.txt",
+        "build/native/Microsoft.ML.OnnxRuntime.props",
+        "build/native/Microsoft.ML.OnnxRuntime.targets",
+        "build/native/include/cpu_provider_factory.h",
+        "build/native/include/cuda_provider_factory.h",
+        "build/native/include/onnxruntime_c_api.h",
+        "build/native/include/onnxruntime_cxx_api.h",
+        "build/native/include/onnxruntime_cxx_inline.h",
+        "build/native/include/onnxruntime_session_options_config_keys.h",
+        "build/netstandard1.1/Microsoft.ML.OnnxRuntime.props",
+        "build/netstandard1.1/Microsoft.ML.OnnxRuntime.targets",
+        "microsoft.ml.onnxruntime.1.7.0.nupkg.sha512",
+        "microsoft.ml.onnxruntime.nuspec",
+        "runtimes/linux-x64/native/libonnxruntime.so",
+        "runtimes/osx-x64/native/libonnxruntime.dylib",
+        "runtimes/win-x64/native/onnxruntime.dll",
+        "runtimes/win-x64/native/onnxruntime.lib",
+        "runtimes/win-x64/native/onnxruntime.pdb",
+        "runtimes/win-x86/native/onnxruntime.dll",
+        "runtimes/win-x86/native/onnxruntime.lib",
+        "runtimes/win-x86/native/onnxruntime.pdb",
+        "runtimes/win10-arm/native/onnxruntime.dll",
+        "runtimes/win10-arm/native/onnxruntime.lib",
+        "runtimes/win10-arm/native/onnxruntime.pdb",
+        "runtimes/win10-arm64/native/onnxruntime.dll",
+        "runtimes/win10-arm64/native/onnxruntime.lib",
+        "runtimes/win10-arm64/native/onnxruntime.pdb"
+      ]
+    },
+    "Microsoft.ML.OnnxRuntime.Managed/1.7.0": {
+      "sha512": "HUxvFO1rcYFCQi99FrDC9g/ODnFeok/Wsfl8MjK4U7GCWcSO7/6+rDrrO8b8P9jrpt7AqgBkr9D7mNlVyhctrA==",
+      "type": "package",
+      "path": "microsoft.ml.onnxruntime.managed/1.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "Privacy.md",
         "ThirdPartyNotices.txt",
         "build/netstandard1.1/Microsoft.ML.OnnxRuntime.Managed.targets",
         "lib/netstandard1.1/Microsoft.ML.OnnxRuntime.dll",
         "lib/netstandard1.1/Microsoft.ML.OnnxRuntime.pdb",
-        "microsoft.ml.onnxruntime.managed.1.6.0.nupkg.sha512",
+        "microsoft.ml.onnxruntime.managed.1.7.0.nupkg.sha512",
         "microsoft.ml.onnxruntime.managed.nuspec"
       ]
     },
@@ -5753,12 +5858,13 @@
       "Microsoft.ML >= 1.5.5",
       "Microsoft.ML.LightGbm >= 1.5.5",
       "Microsoft.ML.OnnxConverter >= 0.17.5",
+      "Microsoft.ML.OnnxRuntime >= 1.7.0",
       "Microsoft.ML.OnnxTransformer >= 1.5.5"
     ]
   },
   "packageFolders": {
     "C:\\Users\\brachtma\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -5770,7 +5876,7 @@
       "outputPath": "C:\\Users\\brachtma\\source\\repos\\RegressionMLNETONNX\\RegressionMLNETONNX\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
         "C:\\Users\\brachtma\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5813,6 +5919,10 @@
             "target": "Package",
             "version": "[0.17.5, )"
           },
+          "Microsoft.ML.OnnxRuntime": {
+            "target": "Package",
+            "version": "[1.7.0, )"
+          },
           "Microsoft.ML.OnnxTransformer": {
             "target": "Package",
             "version": "[1.5.5, )"
@@ -5833,7 +5943,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

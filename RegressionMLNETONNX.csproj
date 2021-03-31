@@ -9,6 +9,7 @@
     <PackageReference Include="Microsoft.ML" Version="1.5.5" />
     <PackageReference Include="Microsoft.ML.LightGbm" Version="1.5.5" />
     <PackageReference Include="Microsoft.ML.OnnxConverter" Version="0.17.5" />
+    <PackageReference Include="Microsoft.ML.OnnxRuntime" Version="1.7.0" />
     <PackageReference Include="Microsoft.ML.OnnxTransformer" Version="1.5.5" />
   </ItemGroup>
 
